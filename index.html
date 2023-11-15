@@ -1,0 +1,53 @@
+<!--
+	Tomer Sheier
+	11/14/2023
+	This assignment about creating a multiplication table using JavaScript. this file is the main file that contains 
+    the html code.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HW3</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="table.js"></script>
+</head>
+
+<body>
+    <div class="formContainer">
+        <div class="formCol">
+            <h3>Please enter the table ranges</h3>
+            <div class="minColVal">
+                <form>
+                    <label for="minCol">Minimum Column Value</label><br>
+                    <input type="number" id="minCol" name="minCol" min="-50" max="50"><br>
+                </form>
+            </div>
+            <div class="maxColVal">
+                <form>
+                    <label for="maxCol">Maximum Column Value</label><br>
+                    <input type="number" id="maxCol" name="maxCol" min="-50" max="50"><br>
+                </form>
+            </div>
+            <div class="minRowVal">
+                <form>
+                    <label for="minRow">Minimum Row Value</label><br>
+                    <input type="number" id="minRow" name="minRow" min="-50" max="50"><br>
+                </form>
+            </div>
+            <div class="maxRowVal">
+                <form>
+                    <label for="maxRow">Maximum Row Value</label><br>
+                    <input type="number" id="maxRow" name="maxRow" min="-50" max="50"><br>
+                </form>
+            </div>
+            <button type="button" onclick="createTable()">Create Multiplication Table</button>
+        </div>
+
+        <div id="table-container"></div>
+    </div>
+</body>
+
+</html>
